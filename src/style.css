@@ -1,0 +1,123 @@
+.timer {
+  margin-top: 10px;
+  text-align: right;
+  margin-right: 3px;
+  color: rgba(46, 42, 42, 0.7);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#button-addon2 {
+  background-color: rgb(119, 171, 238);
+  font-size: 18px;
+}
+.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  color: rgba(1, 1, 1, 0.4);
+}
+.degree {
+  font-size: 12px;
+  position: relative;
+  top: -27px;
+  left: -5px;
+}
+.ok {
+  display: inline;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.whole {
+  max-width: 500px;
+}
+
+.fa-magnifying-glass {
+  position: relative;
+  top: -46px;
+  left: 10px;
+  color: rgba(1, 1, 1, 0.4);
+}
+input::placeholder {
+  color: rgba(46, 42, 42, 0.7) !important;
+}
+h1 {
+  font-size: 50px !important;
+}
+.aval {
+  position: relative;
+  top: -10px;
+  color: rgba(46, 42, 42, 0.7);
+  font-weight: 300;
+  font-size: 50px;
+}
+.sevom {
+  color: rgba(46, 42, 42, 0.7);
+  font-weight: 700;
+  font-size: 50px;
+  position: relative;
+  top: -40px;
+}
+.char {
+  color: rgba(46, 42, 42, 0.7);
+  font-weight: 300;
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  left: 3px;
+}
+.rooz {
+  color: rgba(46, 42, 42, 0.5);
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 50px !important;
+}
+
+.dama {
+  color: #5a6aca;
+  font-weight: 700;
+  font-size: 25px;
+  position: relative;
+  top: 10px;
+}
+.shekl {
+  position: relative;
+  top: 20px;
+  left: -5px;
+}
+hr.khat {
+  position: relative;
+  top: 20px;
+  border-top: 5px solid rgb(164, 199, 231);
+}
+.hisdama {
+  color: #5cb2f7;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  top: 20px;
+}
+
+.rec {
+  color: rgba(46, 42, 42, 0.5);
+  font-weight: 300;
+  font-size: 14px;
+  position: relative;
+  top: 15px;
+}
+.his {
+  color: rgba(46, 42, 42, 0.5);
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  top: 20px;
+}
+.weatherapp {
+  border: 1px solid rgba(116, 108, 108, 0.5);
+  margin-top: 10px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
