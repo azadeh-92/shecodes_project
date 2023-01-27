@@ -77,10 +77,13 @@ h1 {
 .dama {
   color: #5a6aca;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 15px;
   position: relative;
   top: 0px;
-  left: 10px;
+  left: 0px;
+}
+.min {
+  color: rgba(46, 42, 42, 0.5);
 }
 .shekl {
   position: relative;
