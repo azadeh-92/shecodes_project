@@ -131,3 +131,20 @@ let tosels = document.querySelector(".tosels");
 tosels.addEventListener("click", changetos);
 let tofar = document.querySelector(".tofar");
 tofar.addEventListener("click", changetof);
+function forcastDay() {
+  let forcast = document.querySelector(".forcast");
+  let days = ["SAT", "SUN", "MON", "TUE"];
+  let forcastHtml = `<div class="row forcast">`;
+  days.forEach(function (day) {
+    forcastHtml =
+      forcastHtml +
+      `<div class="col-3">
+           <div class=" col rooz">${day}</div>
+             <div class="col dama">47°</div>
+              <img src="image/1.png" alt="imagetemp" width="50px" class="col" />
+              </div>`;
+  });
+  forcastHtml = forcastHtml + `</div>`;
+  forcast.innerHTML = forcastHtml;
+}
+forcastDay();
