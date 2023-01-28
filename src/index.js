@@ -91,32 +91,51 @@ function show(event) {
   cityShow.innerHTML = searchCity;
 
   function forcasting(response1) {
+    // console.log(response1);
     let forcast = document.querySelector(".forcast");
     let passDay = [1, 2, 3, 4];
-    let days = ["SAT", "SUN", "MON", "TUE"];
+    let days = [
+      "SAT",
+      "SUN",
+      "MON",
+      "TUE",
+      "WED",
+      "TUE",
+      "FRI",
+      "SAT",
+      "SUN",
+      "MON",
+      "TUE",
+      "WED",
+      "TUE",
+    ];
+    let now1 = new Date();
+    let day1 = now1.getDay();
+    console.log(response1.data.daily[0].condition.icon);
+
     let forcastHtml = `<div class="row forcast">`;
     passDay.forEach(function (passDay) {
       forcastHtml =
         forcastHtml +
         `<div class="col-3">
-           <div class=" col rooz">${passDay}</div>
+           <div class=" col rooz">${days[day1 + passDay + 1]}</div>
              <div class="col dama">${Math.round(
                response1.data.daily[passDay].temperature.minimum
              )}°  &nbsp<span class="min">  ${Math.round(
           response1.data.daily[passDay].temperature.maximum
         )}°</span></div>
-              <img src="image/1.png" alt="imagetemp" width="50px" class="col" />
+        
+              <img src= http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
+                response1.data.daily[passDay].condition.icon
+              }.png alt="imagetemp" width="50px" class="col" />
               </div>`;
     });
     forcastHtml = forcastHtml + `</div>`;
     forcast.innerHTML = forcastHtml;
   }
   let forcastUrl = `https://api.shecodes.io/weather/v1/forecast?query=${searchCity}&key=${apiKey}&units=metric`;
-  console.log(forcastUrl);
-  let forcastDay = [];
-  let forcastMin = [];
-  let forcastMax = [];
-  let forcastIcon = [];
+  // console.log(forcastUrl);
+
   axios.get(forcastUrl).then(forcasting);
 }
 //search
